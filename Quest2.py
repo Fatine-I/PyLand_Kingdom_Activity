@@ -4,7 +4,7 @@ def check_result(mark):
         print("Pass")
     else:
         print("Fail")     
-m=input("What are your marks? ")
+m=int(input("What are your marks? "))
 if not 0<=m<=100:
     raise ValueError(f"invalid mark!\n marks should range between 0 and 100")
 print(check_result(m))
