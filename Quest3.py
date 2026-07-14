@@ -10,6 +10,5 @@ def calculate_grade(mark):
     for grade_range, ranking in grade_dict.items():
         if grade_range[0]<=mark<=grade_range[1]:
             return ranking
-        else:
-            return 'Invalid score'
-calculate_grade(40)            
+    return 'Invalid Score'    
+print(calculate_grade(40))            
