@@ -11,4 +11,4 @@ while isinstance(num, int)==False:
         num=input("Input an integer number ")
     else:
             break
-print(check_even_odd(num))        
+print(check_even_odd(num)) 
