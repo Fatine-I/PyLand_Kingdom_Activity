@@ -5,10 +5,10 @@ def check_even_odd(number):
     else:
         print (f"{number} is odd.")
 num=input("Provide any integer of your choice ")
-while isinstance(num, int) is false:
-    if isinstance(num, int) is false:
+while isinstance(num, int)==False:
+    if isinstance(num, int)==False:
         print("The number should be an integer")
         num=input("Input an integer number ")
     else:
             break
-print(check_even_odd(num))        
+print(check_even_odd(num)) 
