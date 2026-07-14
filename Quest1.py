@@ -4,11 +4,9 @@ def check_even_odd(number):
         print (f"{number} is even.")
     else:
         print (f"{number} is odd.")
-num=input("Provide any integer of your choice ")
-while isinstance(num, int)==False:
-    if isinstance(num, int)==False:
-        print("The number should be an integer")
-        num=input("Input an integer number ")
-    else:
-            break
+try:        
+    num=int(input("Provide any integer of your choice "))
+    
+except ValueError as e:
+    print("The number is not an integer")  
 print(check_even_odd(num)) 
