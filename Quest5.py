@@ -13,13 +13,16 @@ def divide(n1,n2):
 num1=int(input("enter a number of your choice "))
 num2=int(input("enter another number "))
 sign=input("which operation: +,-,*,/\n")
-if sign=="+":
-    add(num1,num2)
-elif sign=="-":
-    subtract(num1,num2)
-elif sign=="*":
-    multiply(num1,num2)
-elif sign=="/":
-    divide(num1,num2)
-else:
-    raise TypeError("Error: unrecognized sign")    
+try:
+    if sign=="+":
+        add(num1,num2)
+    elif sign=="-":
+        subtract(num1,num2)
+    elif sign=="*":
+        multiply(num1,num2)
+    elif sign=="/":
+        divide(num1,num2)
+    else:
+        raise TypeError("Error: unrecognized sign")
+except TypeError as e:
+    print(f"Error: {e}")        
