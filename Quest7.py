@@ -23,8 +23,8 @@ try:
     option=int(input("Option: "))
     if option!=1 or option!=2 or option!=3:
         raise ValueError("Only 1, 2 and 3 options are available")
-except ValueError as e:
-    print(e)
+except TypeError as e:
+    print("Occurred error: "e)
 if option==1:
     deposit(balance)
 elif option==2:
