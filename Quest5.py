@@ -23,6 +23,6 @@ try:
     elif sign=="/":
         divide(num1,num2)
     else:
-        raise TypeError("Error: unrecognized sign")
+        raise TypeError("Unrecognized sign")
 except TypeError as e:
     print(f"Error: {e}")        
