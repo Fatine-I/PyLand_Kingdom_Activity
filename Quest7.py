@@ -21,10 +21,11 @@ print("Hi, what would like to do?\n")
 print("1.Deposit\n2.Withdraw\n3.Check balance")
 try:
     option=int(input("Option: "))
-    if option!=1 or option!=2 or option!=3:
+    if not option in (1,2,3):
         raise ValueError("Only 1, 2 and 3 options are available")
-except TypeError as e:
-    print("Occurred error: "e)
+except (TypeError, ValueError) as e:
+    print(e)
+
 if option==1:
     deposit(balance)
 elif option==2:
