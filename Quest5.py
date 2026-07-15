@@ -10,9 +10,9 @@ def divide(n1,n2):
         print(f"{n1} / {n2} = {n1/n2} ")
     except ZeroDivisionError:
         print(f"Error occured: the second number is zero.")       
-num1=int(input("enter a number of your choice"))
-num2=int(input("enter another number"))
-sign=input("which operation: +,-,*,/")
+num1=int(input("enter a number of your choice "))
+num2=int(input("enter another number "))
+sign=input("which operation: +,-,*,/\n")
 if sign=="+":
     add(num1,num2)
 elif sign=="-":
