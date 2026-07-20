@@ -1,12 +1,11 @@
 #Login Credentials
-def login(username, password):
-    username="admin"
-    password="python123"    
+username="admin"
+password="python123"
+def login(un, pw):       
+    if (un,pw)!=(username,password):
+        print("Access Denied!")
+    else:
+        print("Login Successful!")
 u=input("Enter the Username ")
-p=input("Enter the password")
-verification=login(u,p)
-if not verification:
-    print("Access Denied!")
-else:
-    print("Login Successful!")
-
+p=input("Enter the password ")
+login(u,p)
